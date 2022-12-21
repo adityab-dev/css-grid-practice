@@ -7,8 +7,8 @@ function Task2() {
     <>
     <h2>Task 2</h2>
     <div className={styles.gridContainer}>
-      <div className={styles.gridItem1}><div>item 1</div></div>
-      <div className={styles.gridItem2}><div>item 2</div></div>
+      <div className={styles.gridItem1}></div>
+      <div className={styles.gridItem2}></div>
     </div>
     </>
     

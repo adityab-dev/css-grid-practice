@@ -1,0 +1,49 @@
+.gridContainer {
+  border: solid 2px black;
+
+  width: 50vw;
+  height: 20vh;
+  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 
+    "one one one"
+    "two three three"
+    ". four four";
+
+    gap: 10px;
+}
+
+.gridContainer > div {
+  display: flex;
+
+  justify-content: flex-start;
+  align-items: center;
+
+  padding-left: 1rem;
+  margin: 5px;
+}
+
+.gridItem1 {
+  grid-area: one;
+}
+
+.gridItem2 {
+  grid-area: two;
+}
+
+.gridItem3 {
+  grid-area: three;
+}
+
+.gridItem4 {
+  grid-area: four;
+}
+
+.gridItem {
+  background: rgb(51, 131, 131);
+  color: white;
+
+  border: solid 2px rgb(13, 63, 63);
+  border-radius: 5px;
+}
